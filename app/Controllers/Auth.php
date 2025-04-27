@@ -34,8 +34,10 @@ class Auth extends Controller
             // Arahkan berdasarkan role
             if ($admin['role'] == 'admin') {
                 return redirect()->to('/dashboard');
-            } else {
+            } elseif ($admin['role'] == 'pengasuh') {
                 return redirect()->to('/pengasuh');
+            } elseif ($admin['role'] == 'orangtua') {
+                return redirect()->to('/orangtua');
             }
         }
     }

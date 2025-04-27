@@ -26,3 +26,5 @@ $routes->post('/nilai/simpan', 'Nilai::simpan');
 $routes->get('/nilai/export', 'Nilai::exportPdf');
 $routes->get('/pengasuh', 'Pengasuh::index');
 $routes->get('/kehadiran/export', 'Kehadiran::exportPdf');
+$routes->get('/orangtua', 'Orangtua::index');
+
