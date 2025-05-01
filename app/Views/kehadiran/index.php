@@ -9,6 +9,7 @@
   <div class="container mt-4">
     <h3>Data Kehadiran</h3>
     <a href="<?= base_url('kehadiran/tambah') ?>" class="btn btn-success mb-3">+ Tambah Kehadiran</a>
+    <a href="<?= base_url('kehadiran/export') ?>" class="btn btn-success mb-3">+ Export PDF Kehadiran</a>
     <table class="table table-bordered">
       <thead class="table-success">
         <tr>

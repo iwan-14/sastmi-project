@@ -24,7 +24,7 @@ class Auth extends Controller
                        ->where('password', $password)
                        ->first();
 
-           if ($admin) {
+        if ($admin) {
             $session->set([
                 'username' => $admin['username'],
                 'role'     => $admin['role'],
@@ -39,6 +39,10 @@ class Auth extends Controller
             } elseif ($admin['role'] == 'orangtua') {
                 return redirect()->to('/orangtua');
             }
+        } else {
+            // Set flash message untuk error
+            $session->setFlashdata('error', 'Username atau Password salah!');
+            return redirect()->back();
         }
     }
 

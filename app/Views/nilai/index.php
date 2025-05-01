@@ -9,6 +9,7 @@
   <div class="container mt-4">
     <h3>Data Nilai Akademik</h3>
     <a href="<?= base_url('nilai/tambah') ?>" class="btn btn-success mb-3">+ Tambah Nilai</a>
+    <a href="<?= base_url('nilai/export') ?>" class="btn btn-success mb-3">+ Export PDF Nilai</a>
     <table class="table table-bordered table-striped">
       <thead class="table-success">
         <tr>
